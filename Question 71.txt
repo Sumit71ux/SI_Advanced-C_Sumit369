@@ -1,0 +1,14 @@
+//71.Swap two numbers using pointers.
+#include <stdio.h>
+int main()
+{
+  int a,b;
+  scanf("%d%d",&a,&b);
+  int  *p=&a;
+  int  *p1=&b;
+  int temp=*p;
+  *p=*p1;
+  *p1=temp;
+  printf("after swap a=%d,b=%d",a,b);
+    return 0;
+}

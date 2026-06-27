@@ -1,0 +1,16 @@
+//75.Copy one array to another using pointers.  
+#include <stdio.h>
+int main()
+{
+  int a[5]={1,2,3,4,5};
+  int  *p=&a;
+  int b[5],j=0;
+  for(int i=0;i<5;i++)
+  {
+  b[j]=*(p+i);
+  j++;
+  }
+  for(int i=0;i<5;i++)
+  printf("%d",b[i]);
+    return 0;
+}
